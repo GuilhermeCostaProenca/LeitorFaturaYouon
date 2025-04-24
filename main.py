@@ -3,8 +3,11 @@ from fastapi.responses import HTMLResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 import fitz
-from extractor.parser import parse_basic_energy_info
 from pathlib import Path
+from datetime import datetime
+import json
+
+from extractor.parser import parse_basic_energy_info
 
 app = FastAPI()
 templates = Jinja2Templates(directory="templates")
@@ -30,6 +33,17 @@ async def upload_file(request: Request, file: UploadFile = File(...)):
 
     text = extract_text_from_pdf(temp_path)
     result = parse_basic_energy_info(text)
+
+    # LOGS AUTOMÁTICOS
+    timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
+    Path("logs").mkdir(exist_ok=True)
+
+    with open(f"logs/{timestamp}_raw.txt", "w", encoding="utf-8") as f:
+        f.write(text)
+
+    with open(f"logs/{timestamp}_log.json", "w", encoding="utf-8") as f:
+        json.dump(result, f, indent=2, ensure_ascii=False)
+
     Path(temp_path).unlink()
 
     return templates.TemplateResponse("index.html", {"request": request, "data": result})

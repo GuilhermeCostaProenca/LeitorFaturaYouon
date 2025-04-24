@@ -1,0 +1,512 @@
+Demanda TUSDG - kW
+W9013478066
+Ponta
+Energia ativa em kWh
+1
+1720,483
+1678,52
+0
+W9013478066
+Fora Ponta
+Energia ativa em kWh
+1
+12394,013
+12091,72
+0
+100
+R$
+LOCAL DE PAGAMENTO
+74593.10012  19125.014001  00837.774157 5 99420000784404
+745
+NÃO ACEITAMOS DEPÓSITO EM CONTA CORRENTE. CASO OCORRA, O MESMO NÃO QUITARÁ ESTA FATURA.
+CITIBANK
+PAGAR PREFERENCIALMENTE NO  CITIBANK
+BENEFICIÁRIO
+ENDEREÇO
+AV. MANOEL INÁCIO PEIXOTO, 1200 - DIST.INDUSTRIAL - CATAGUASES    / MG - CEP 36771-000
+DATA DO DOCUMENTO
+11/12/2024
+ESPÉCIE DOC
+ACEITE
+N
+VALOR
+INSTRUÇÕES
+OS VALORES DA MULTA/JUROS DE MORA POR ATRASO SÓ SERÃO COBRADOS
+NA PRIMEIRA FATURA APÓS O PAGAMENTO DESTA.
+TITULO SUJEITO A PROTESTO APÓS O VENCIMENTO.
+PAGADOR
+FRIGORIFICO SANTANA LTDA
+RUA ANTONIO CAVALCANTE SOBRAL, SN    SANTANA DE CATAGUASES (AG: 61)
+SACADOR/ AVALISTA
+AUTENTICAÇÃO MECÂNICA
+Ficha de Compensação
+897003-2024-12-3
+Nº DOCUMENTO
+ESPÉCIE
+QUANTIDADE
+CARTEIRA
+CNPJ
+19.527.639/0001-58
+ENERGISA MINAS RIO - DISTRIB.ENERGIA SA
+DATA DO PROCESSAMENTO
+11/12/2024
+26/12/2024
+1/86274090-0
+000083777415
+7.844,04
+(-) DESCONTOS/ 
+ ABATIMENTOS
+(-) OUTRAS 
+ DEDUÇÕES
+(+) MORA/ 
+ MULTA
+(+) OUTROS 
+ACRÉSCIMOS
+(=) VALOR
+COBRADO
+(=)VALOR DO DOCUMENTO
+NOSSO NÚMERO
+Ag/COD. BENEFICIÁRIO
+VENCIMENTO
+CPF/CNPJ
+CÓD. DE BAIXA
+13.987.823/0001-02
+PIX
+Pague por
+É fácil, rápido e seguro.
+	
+			
+	
+
+Abra sua conta VOLTZ - Energisa
+contavoltz.com/pix
+Receba sua conta só com o PIX
+Cadastre-se em nossos canais
+Em atendimento ao disposto no § 4º do art. 10º da REN ANEEL   nº 885/20, fica estabelecido o adicional referente ao encargo   conta COVID, aplicável aos consumidores que comunicaram a   migração para o ACL a 
+partir de 08/04/20.   Em atendimento ao disposto no § 4º do art. 8º da REN ANEEL   nº 1.008/2022, fica estabelecido o adicional referente ao encargo   conta escassez hídrica aplicável aos consumidores que 
+comunicaram   a migração para o ACL a partir de 13/12/2021.                     
+Insc. Est.: 001XXXXXX
+SAO FRANCISCO
+FRIGORIFICO SANTANA LTDA
+SANTANA DE CATAGUASES (AG: 61)
+RUA ANTONIO CAVALCANTE SOBRAL, SN - 36795000
+CNPJ/CPF: 1X.XXX.XXX/XXX1-02
+TENSÃO NOMINAL EM VOLTS     DISP:
+127
+Lim. Min.: 117 
+Lim. Max.:  133
+PIS/
+Base Calc.
+ICMS
+% Alíq.
+Unid.
+Quant.
+com tributos
+Preço unit (R$)
+Valor (R$)
+2,739600
+ICMS (R$)
+0,131220
+0,436350
+0,436350
+43,796520
+35,913150
+0,007310
+0,004181
+12.394,01
+4.713,44
+1.626,40
+54,42
+907,43
+2.578,56
+0,00
+103,17
+59,00
+0,00
+0,00
+0,00
+0,00
+0,00
+292,75
+9,79
+163,34
+464,14
+0,00
+18,57
+10,62
+0,00
+0,00
+0,00
+0,00
+0,00
+ICMS
+(R$)
+unit R$
+Tarifa
+2,162460
+0,103580
+0,344430
+0,344430
+34,570000
+34,570000
+0,005770
+0,003300
+0,000000
+0,000000
+0,000000
+0,000000
+0,000000
+Classificação: MVF-MOD. TARIF. VERDE F I / A4  INDUSTRIAL / 
+INDUSTRIAL 
+TRIFASICO
+LIGAÇÃO:
+DANF3E - DOCUMENTO AUXILIAR DA NOTA FISCAL DE ENERGIA ELÉTRICA ELETRÔNICA
+Av Manoel Inacio Peixoto, 1200 - Distrito Industrial
+Cataguases / MG - CEP 36771-000
+CNPJ 19.527.639/0001-58       Insc.Est. 153.056023-0000
+ENERGISA MINAS RIO - DISTRIBUIDORA DE ENERGIA S.A.
+DOM.  ENT.:
+ROTEIRO: 041 - 0061 - 000 - 0025
+DOM.  BANC.:   
+MATRÍCULA: 0000897003-2024-12-3
+848,42
+Demanda ponta - kW
+COFINS (R$)
+4.713,44
+144,55
+1.626,40
+49,88
+54,42
+1,67
+907,43
+27,82
+2.578,56
+79,07
+1.117,76
+41,81
+103,17
+3,16
+59,00
+1,81
+3,42
+0,00
+7,23
+0,00
+-1.017,67
+0,00
+-537,98
+0,00
+-1.771,14
+0,00
+90
+Demanda fora ponta - kW
+Dezembro / 2024
+26/12/2024
+R$ 7.844,04
+NOTA FISCAL Nº: 003.858.444 - Série: 002 
+DATA DE EMISSÃO:11/12/2024
+Data de Apresentação:
+Utilize o Código:
+W9013478066
+1/897003-0
+Itens da Fatura
+TUSD em kWh - Ponta
+TUSD em kWh - Fora Ponta
+Energia Reat Exced em KWh Livre - Ponta
+Energia Reat Exced em KWh Livre - FPonta
+TUSD em kW Medida - Fora Ponta
+TUSD em kW Não Consumida - F. Ponta
+Adicional conta covid
+Adicional Conta Covid Escassez Hídrica
+DÉBITO TUSD KW-APCEI 10/2024
+DEBITO TUSD KWH PONTA-APCEI 10/2024
+CREDITO TUSD KW-APCEI 12/2024
+CREDITO TUSD KW-APCEI - N CONSUMIDA 12/2024
+CREDITO TUSD KWH PONTA-APCEI 12/2024
+Grandezas Contratadas
+349,77
+10.042,42
+1.807,63
+TOTAL:
+7844,04
+18/12/2024
+0000897003-0
+Cadastre sua Fatura em Débito Automático.
+31/10/2024
+30
+30/11/2024
+31/12/2024
+Tributo
+Valor
+(R$)
+Alíquota
+(%)
+Base de 
+Cálc.(R$)
+1.720,48
+124,73
+Consulte pela Chave de Acesso em:
+https://portalsped.fazenda.mg.gov.br/portalnf3e
+chave de acesso:
+3124 1219 5276 3900 0158 6600 2003 8584 4410 2725 
+2867
+Protocolo de Autorização:
+1312400235862209 - 11/12/2024 15:25:15
+2.079,56
+58,88
+31,12
+14.114,50
+14.114,50
+1
+KWH
+KWH
+UN
+UN
+KW
+KW
+KWH
+KWH
+Art. 42 inciso I, subalínea e do RICMS/MG Decreto 43.080/2002
+62,38
+287,39
+0,6671
+3,0729
+18,00
+9.352,50
+9.352,50
+10.042,42
+1.807,63
+PIS
+ICMS
+COFINS
+18
+18
+18
+18
+18
+0
+18
+18
+0
+0
+0
+0
+0
+DRE
+KWH
+KWH
+KW
+KW
+ERE
+ERE
+DRE
+32,80
+0,00
+8,47
+13,76
+27,50
+100,00
+17,47
+2.573,20
+0,00
+664,77
+1.079,32
+2.157,40
+7.844,04
+Encargo de Uso do Sistema de Distribuição 
+(Ref 10/2024): R$ 5.694,41
+Outros serviços
+Compra de energia
+Serviço de transmissão
+Encargos setoriais
+Impostos diretos e encargos
+Total
+1.369,35
+Serviço de distribuição 
+Leitura Atual:
+Leitura Anterior:
+Dias: 30
+30/11/2024
+31/10/2024
+*FATURAMENTO PELA MÉDIA/MÍNIMO
+FIC
+DMIC
+DICRI
+Referência:
+10/2024
+Conjunto:
+Tensão Contratada:
+Limite Adequado:
+Laranjal
+127
+117 a 133
+DIC
+0,97
+999,00
+999,00
+5,00
+1,00
+19,00
+0,97
+14,00
+21,00
+KW Ponta:
+Fora Ponta: 90
+TUSDG:
+* KWTG: Dem Tusdg
+* K: Const Med
+999,00
+999,00
+FPonta
+Ponta
+FPonta
+Ponta
+FPonta
+Ponta
+FPonta
+Ponta
+55,38
+121,69
+2.028,84
+54,97
+1.678,52
+12.091,72
+56,96
+57,44
+0,00
+0,00
+0,00
+0,00
+0,00
+0,00
+0,00
+0,00
+1,00
+1,00
+1,00
+1,00
+1,00
+1,00
+1,00
+1,00
+2,50
+2,50
+2,50
+2,50
+2,50
+2,50
+2,50
+2,50
+0,00
+0,00
+0,00
+0,00
+0,00
+0,00
+0,00
+0,00
+0,00
+0,00
+0,00
+0,00
+0,00
+0,00
+0,00
+0,00
+58,88
+124,73
+2.079,56
+56,35
+56,77
+12.394,01
+58,38
+1.720,48
+1.720,48
+0,00
+12.394,01
+0,00
+90,00
+124,73
+2.079,56
+0,00
+OUT/24  
+NOV/24  
+SET/24  
+AGO/24  
+JUL/24  
+JUN/24  
+MAI/24  
+ABR/24  
+MAR/24  
+FEV/24  
+JAN/24  
+DEZ/23  
+DEZ/24  
+2.136,43
+2.516,66
+572,11
+0,00
+0,00
+0,00
+0,00
+0,00
+0,00
+0,00
+0,00
+0,00
+1.720,48
+58,38
+78,23
+70,19
+35,10
+0,00
+0,00
+0,00
+0,00
+0,00
+0,00
+0,00
+0,00
+0,00
+0,00
+0,00
+0,00
+0,00
+0,00
+0,00
+0,00
+0,00
+0,00
+0,00
+0,00
+3.568,72
+14.341,55
+12.830,42
+12.394,01
+0,00
+43,62
+71,01
+80,85
+58,88
+2.079,56
+184,24
+179,91
+40,26
+3,14
+0,00
+0,00
+0,00
+0,00
+0,00
+0,00
+0,00
+0,00
+0,00
+0,00
+0,00
+0,00
+0,00
+124,73
+2.344,20
+2.157,18
+533,87
