@@ -10,7 +10,7 @@ def load_azure_credentials():
 
 def extrair_dados_pdf(path_pdf: str):
     endpoint, key = load_azure_credentials()
-    
+
     client = DocumentAnalysisClient(
         endpoint=endpoint,
         credential=AzureKeyCredential(key)
@@ -20,23 +20,8 @@ def extrair_dados_pdf(path_pdf: str):
         poller = client.begin_analyze_document("prebuilt-layout", document=f)
         result = poller.result()
 
-    dados_extraidos = []
-    for page in result.pages:
-        pagina = []
-        for table in page.tables:
-            tabela = []
-            for cell in table.cells:
-                tabela.append({
-                    "content": cell.content,
-                    "row": cell.row_index,
-                    "col": cell.column_index
-                })
-            pagina.append(tabela)
-        dados_extraidos.append(pagina)
-
-    # Salvar o JSON bruto opcionalmente (log)
     os.makedirs("saida", exist_ok=True)
     with open("saida/log_raw_azure.json", "w") as f:
         json.dump(result.to_dict(), f, indent=4)
 
-    return result.to_dict()  # retorno total do Azure (para parser_dados)
+    return result.to_dict()
