@@ -1,6 +1,6 @@
-from utils.ocr import extract_text_from_pdf
-from utils.calc import process_fatura_data
-from utils.export import export_to_json, export_to_excel
+from azure_reader import extrair_dados_pdf
+from parser_dados import extrair_campos_engenharia
+from integrador_monday import enviar_para_monday
 
 import sys
 
@@ -8,11 +8,11 @@ if __name__ == "__main__":
     path_pdf = sys.argv[1] if len(sys.argv) > 1 else "sample_faturas/fatura_exemplo.pdf"
 
     print("[INFO] Lendo fatura:", path_pdf)
-    raw_text, distribuidora = extract_text_from_pdf(path_pdf)
+    resultado_azure = extrair_dados_pdf(path_pdf)
 
-    print("[INFO] Distribuidora detectada:", distribuidora)
-    dados_processados = process_fatura_data(raw_text, distribuidora)
+    print("[INFO] Extraindo dados técnicos...")
+    dados_processados = extrair_campos_engenharia(resultado_azure)
 
-    export_to_json(dados_processados, output_path="saida/dados.json")
-    export_to_excel(dados_processados, output_path="saida/dados.xlsx")
-    print("[SUCESSO] Dados exportados com sucesso!")
+    print("[INFO] Enviando para o Monday...")
+    enviar_para_monday(dados_processados)
+    print("[SUCESSO] Processo concluído!")
