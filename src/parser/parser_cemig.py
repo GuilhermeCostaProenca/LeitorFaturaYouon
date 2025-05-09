@@ -2,7 +2,7 @@ import re
 from typing import Dict
 
 
-def parser_cemig(texto: str) -> Dict:
+def parse(texto: str) -> Dict:
     """
     Parser robusto para faturas da CEMIG (Minas Gerais).
     """
