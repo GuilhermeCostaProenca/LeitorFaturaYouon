@@ -2,9 +2,9 @@ import re
 from typing import Dict
 
 
-def parser_cemig(texto: str) -> Dict:
+def parser_light(texto: str) -> Dict:
     """
-    Parser robusto para faturas da CEMIG (Minas Gerais).
+    Parser robusto para faturas da Light (Rio de Janeiro).
     """
 
     def extrair(regex, tipo=str, padrao_padrao=None):
@@ -17,7 +17,7 @@ def parser_cemig(texto: str) -> Dict:
             return padrao_padrao
 
     # === Distribuidora
-    distribuidora = "CEMIG"
+    distribuidora = "Light RJ"
 
     # === Mercado
     mercado = "Livre" if "ambiente de contratação livre" in texto.lower() else "Cativo"

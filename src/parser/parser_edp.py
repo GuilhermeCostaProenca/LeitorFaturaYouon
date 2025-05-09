@@ -2,9 +2,9 @@ import re
 from typing import Dict
 
 
-def parser_cemig(texto: str) -> Dict:
+def parser_edp(texto: str) -> Dict:
     """
-    Parser robusto para faturas da CEMIG (Minas Gerais).
+    Parser robusto para faturas do grupo EDP: EDP São Paulo e EDP Espírito Santo.
     """
 
     def extrair(regex, tipo=str, padrao_padrao=None):
@@ -17,7 +17,12 @@ def parser_cemig(texto: str) -> Dict:
             return padrao_padrao
 
     # === Distribuidora
-    distribuidora = "CEMIG"
+    if "edp são paulo" in texto.lower():
+        distribuidora = "EDP SP"
+    elif "edp espírito santo" in texto.lower() or "edp espirito santo" in texto.lower():
+        distribuidora = "EDP ES"
+    else:
+        distribuidora = "EDP (Desconhecida)"
 
     # === Mercado
     mercado = "Livre" if "ambiente de contratação livre" in texto.lower() else "Cativo"

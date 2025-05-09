@@ -2,9 +2,9 @@ import re
 from typing import Dict
 
 
-def parser_cemig(texto: str) -> Dict:
+def parser_neoenergia(texto: str) -> Dict:
     """
-    Parser robusto para faturas da CEMIG (Minas Gerais).
+    Parser robusto para faturas do grupo Neoenergia: Coelba, Celpe, Cosern, Elektro, Neoenergia DF.
     """
 
     def extrair(regex, tipo=str, padrao_padrao=None):
@@ -17,7 +17,18 @@ def parser_cemig(texto: str) -> Dict:
             return padrao_padrao
 
     # === Distribuidora
-    distribuidora = "CEMIG"
+    if "neoenergia coelba" in texto.lower():
+        distribuidora = "Neoenergia Coelba"
+    elif "neoenergia celpe" in texto.lower():
+        distribuidora = "Neoenergia Celpe"
+    elif "neoenergia cosern" in texto.lower():
+        distribuidora = "Neoenergia Cosern"
+    elif "neoenergia elektro" in texto.lower():
+        distribuidora = "Neoenergia Elektro"
+    elif "neoenergia brasília" in texto.lower():
+        distribuidora = "Neoenergia DF"
+    else:
+        distribuidora = "Neoenergia (Desconhecida)"
 
     # === Mercado
     mercado = "Livre" if "ambiente de contratação livre" in texto.lower() else "Cativo"

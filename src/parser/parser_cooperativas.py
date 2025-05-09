@@ -2,9 +2,9 @@ import re
 from typing import Dict
 
 
-def parser_cemig(texto: str) -> Dict:
+def parser_cooperativas(texto: str) -> Dict:
     """
-    Parser robusto para faturas da CEMIG (Minas Gerais).
+    Parser genérico para faturas de cooperativas e pequenas distribuidoras que seguem modelo estadual.
     """
 
     def extrair(regex, tipo=str, padrao_padrao=None):
@@ -17,7 +17,7 @@ def parser_cemig(texto: str) -> Dict:
             return padrao_padrao
 
     # === Distribuidora
-    distribuidora = "CEMIG"
+    distribuidora = "Cooperativa ou pequena distribuidora"
 
     # === Mercado
     mercado = "Livre" if "ambiente de contratação livre" in texto.lower() else "Cativo"

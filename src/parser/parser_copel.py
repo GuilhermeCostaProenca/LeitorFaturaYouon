@@ -2,9 +2,9 @@ import re
 from typing import Dict
 
 
-def parser_cemig(texto: str) -> Dict:
+def parser_copel(texto: str) -> Dict:
     """
-    Parser robusto para faturas da CEMIG (Minas Gerais).
+    Parser robusto para faturas da COPEL (Paraná).
     """
 
     def extrair(regex, tipo=str, padrao_padrao=None):
@@ -17,7 +17,7 @@ def parser_cemig(texto: str) -> Dict:
             return padrao_padrao
 
     # === Distribuidora
-    distribuidora = "CEMIG"
+    distribuidora = "COPEL"
 
     # === Mercado
     mercado = "Livre" if "ambiente de contratação livre" in texto.lower() else "Cativo"
@@ -73,3 +73,4 @@ def parser_cemig(texto: str) -> Dict:
         "ultrapassagem_ponta_kw": round(ultrapassagem_ponta, 2),
         "ultrapassagem_fora_ponta_kw": round(ultrapassagem_fp, 2)
     }
+

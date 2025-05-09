@@ -1,13 +1,16 @@
-from flask import Flask, render_template
-import os
 
-app = Flask(__name__, template_folder=os.path.join(os.path.dirname(__file__), '..', 'templates'))
+import os
+from flask import Flask, render_template, request
 from azure_reader import extrair_dados_pdf
 from parser.parser_dispatcher import parse_fatura
-import os
 
-app = Flask(__name__)
-UPLOAD_FOLDER = "sample_faturas"
+# Caminho correto para os templates
+template_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'templates'))
+
+# Criação do app com caminho do template
+app = Flask(__name__, template_folder=template_dir)
+
+UPLOAD_FOLDER = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'sample_faturas'))
 
 @app.route("/", methods=["GET"])
 def index():
@@ -28,6 +31,8 @@ def upload():
     print(f"[INFO] Arquivo salvo: {caminho}")
     try:
         texto = extrair_dados_pdf(caminho)
+        if isinstance(texto, dict):  # compatibilidade com dicionário retornado pela IA
+            texto = texto.get("content", "")
         dados = parse_fatura(texto)
         return render_template("index.html", dados=dados)
     except Exception as e:

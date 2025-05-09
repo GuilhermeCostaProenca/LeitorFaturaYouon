@@ -2,9 +2,9 @@ import re
 from typing import Dict
 
 
-def parser_cemig(texto: str) -> Dict:
+def parser_equatorial(texto: str) -> Dict:
     """
-    Parser robusto para faturas da CEMIG (Minas Gerais).
+    Parser robusto para faturas do grupo Equatorial: PA, MA, PI, AL, GO, RS.
     """
 
     def extrair(regex, tipo=str, padrao_padrao=None):
@@ -17,7 +17,11 @@ def parser_cemig(texto: str) -> Dict:
             return padrao_padrao
 
     # === Distribuidora
-    distribuidora = "CEMIG"
+    distribuidora = "Equatorial"
+    for estado in ["PA", "MA", "PI", "AL", "GO", "RS"]:
+        if f"equatorial {estado.lower()}" in texto.lower():
+            distribuidora = f"Equatorial {estado}"
+            break
 
     # === Mercado
     mercado = "Livre" if "ambiente de contratação livre" in texto.lower() else "Cativo"

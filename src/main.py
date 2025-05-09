@@ -1,15 +1,38 @@
-from azure_reader import extrair_dados_pdf
-from src.parser.parser_fatura import parse_fatura
-from validador import salvar_preview, imprimir_preview
-import sys
+import os
+from fastapi import FastAPI, File, UploadFile, Request
+from fastapi.responses import HTMLResponse
+from fastapi.staticfiles import StaticFiles
+from fastapi.templating import Jinja2Templates
+from src.azure_reader import extrair_texto_azure
+from parser_dispatcher import parser_dispatcher
+from src.validador import validar_dados
 
-if __name__ == "__main__":
-    path_pdf = sys.argv[1] if len(sys.argv) > 1 else "sample_faturas/exemplo.pdf"
 
-    print(f"[INFO] Iniciando leitura de: {path_pdf}")
-    resultado_azure = extrair_dados_pdf(path_pdf)
-    content = resultado_azure.get("content", "")
-    dados = parse_fatura(content)
+app = FastAPI()
 
-    imprimir_preview(dados)
-    salvar_preview(dados)
+app.mount("/static", StaticFiles(directory="static"), name="static")
+templates = Jinja2Templates(directory="templates")
+
+@app.get("/", response_class=HTMLResponse)
+async def index(request: Request):
+    return templates.TemplateResponse("index.html", {"request": request})
+
+@app.post("/upload", response_class=HTMLResponse)
+async def upload(request: Request, fatura: UploadFile = File(...)):
+    if not fatura.filename.lower().endswith(".pdf"):
+        return templates.TemplateResponse("index.html", {"request": request, "erro": "Formato inválido. Envie um PDF."})
+
+    caminho = f"temp/{fatura.filename}"
+    os.makedirs("temp", exist_ok=True)
+    with open(caminho, "wb") as buffer:
+        buffer.write(await fatura.read())
+
+    try:
+        texto_extraido = extrair_texto_azure(caminho)
+        dados = parser_dispatcher(texto_extraido)
+        dados = validar_dados(dados)
+        return templates.TemplateResponse("index.html", {"request": request, "dados": dados})
+    except Exception as e:
+        return templates.TemplateResponse("index.html", {"request": request, "erro": str(e)})
+    finally:
+        os.remove(caminho)
