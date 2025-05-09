@@ -7,7 +7,6 @@ load_dotenv()
 
 AZURE_ENDPOINT = os.getenv("AZURE_FORM_RECOGNIZER_ENDPOINT")
 AZURE_KEY = os.getenv("AZURE_FORM_RECOGNIZER_KEY")
-AZURE_MODEL_ID = os.getenv("AZURE_CUSTOM_MODEL_ID")  # ID do modelo personalizado se necessário
 
 
 def extrair_texto_azure(caminho_arquivo: str) -> Optional[str]:

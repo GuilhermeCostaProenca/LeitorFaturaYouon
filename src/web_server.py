@@ -2,7 +2,7 @@
 import os
 from flask import Flask, render_template, request
 from azure_reader import extrair_dados_pdf
-from parser.parser_dispatcher import parse_fatura
+from parser_dispatcher import parse_fatura
 
 # Caminho correto para os templates
 template_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'templates'))

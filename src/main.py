@@ -4,7 +4,7 @@ from fastapi.responses import HTMLResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 from src.azure_reader import extrair_texto_azure
-from parser_dispatcher import parser_dispatcher
+from src.parser_dispatcher import parser_dispatcher
 from src.validador import validar_dados
 
 
@@ -21,7 +21,6 @@ async def index(request: Request):
 async def upload(request: Request, fatura: UploadFile = File(...)):
     if not fatura.filename.lower().endswith(".pdf"):
         return templates.TemplateResponse("index.html", {"request": request, "erro": "Formato inválido. Envie um PDF."})
-
     caminho = f"temp/{fatura.filename}"
     os.makedirs("temp", exist_ok=True)
     with open(caminho, "wb") as buffer:

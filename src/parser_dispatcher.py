@@ -1,4 +1,4 @@
-from . import parser_energisa, parser_cemig, parser_cpfl, parser_enel, parser_fallback
+from .parser import parser_energisa, parser_cemig, parser_cpfl, parser_enel, parser_fallback
 
 def identificar_grupo(content):
     content = content.upper()
@@ -13,7 +13,7 @@ def identificar_grupo(content):
     else:
         return "fallback"
 
-def parse_fatura(content):
+def parser_dispatcher(content):
     grupo = identificar_grupo(content)
     if grupo == "energisa":
         return parser_energisa.parse(content)
