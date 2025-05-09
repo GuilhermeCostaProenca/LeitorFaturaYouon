@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Leitor de Fatura - You.on</title>
+</head>
+<body>
+  <h2>Envie sua conta de luz</h2>
+  <form action="/upload" method="post" enctype="multipart/form-data">
+    <input type="file" name="fatura" required>
+    <button type="submit">Enviar</button>
+  </form>
+
+  {% if dados %}
+    <h3>Resultado:</h3>
+    <ul>
+      {% for chave, valor in dados.items() %}
+        <li><strong>{{ chave }}:</strong> {{ valor }}</li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+</body>
+</html>
