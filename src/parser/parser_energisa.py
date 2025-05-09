@@ -2,7 +2,7 @@ import re
 from typing import Dict
 
 
-def parser_energisa(texto: str) -> Dict:
+def parse(texto: str) -> Dict:
     """
     Parser robusto para faturas do grupo Energisa: MT, MS, TO, PB, SE, RJ, AC, RO, SP, MG.
     """

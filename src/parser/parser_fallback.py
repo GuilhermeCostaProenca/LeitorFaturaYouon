@@ -3,7 +3,7 @@ from typing import Dict
 
 from .parser_enel import parser_enel
 from .parser_neoenergia import parser_neoenergia
-from .parser_energisa import parser_energisa
+from .parser_energisa import parse
 from .parser_equatorial import parser_equatorial
 from .parser_cpfl import parser_cpfl
 from .parser_edp import parser_edp
