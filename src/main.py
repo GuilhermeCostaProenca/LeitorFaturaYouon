@@ -1,17 +1,15 @@
 from azure_reader import extrair_dados_pdf
-from parser_dados import extrair_campos_tecnicos_from_text
-from integrador_monday import enviar_para_monday
+from src.parser.parser_fatura import parse_fatura
+from validador import salvar_preview, imprimir_preview
 import sys
 
 if __name__ == "__main__":
-    path_pdf = sys.argv[1] if len(sys.argv) > 1 else "sample_faturas/fatura_teste.pdf"
+    path_pdf = sys.argv[1] if len(sys.argv) > 1 else "sample_faturas/exemplo.pdf"
 
-    print("[INFO] Lendo fatura:", path_pdf)
+    print(f"[INFO] Iniciando leitura de: {path_pdf}")
     resultado_azure = extrair_dados_pdf(path_pdf)
+    content = resultado_azure.get("content", "")
+    dados = parse_fatura(content)
 
-    print("[INFO] Extraindo dados técnicos...")
-    dados_processados = extrair_campos_tecnicos_from_text(resultado_azure["content"])
-
-    print("[INFO] Enviando para o Monday...")
-    enviar_para_monday(dados_processados)
-    print("[SUCESSO] Processo concluído!")
+    imprimir_preview(dados)
+    salvar_preview(dados)
