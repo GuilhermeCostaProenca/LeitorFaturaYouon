@@ -2,7 +2,7 @@ import re
 from typing import Dict
 
 
-def parser_enel(texto: str) -> Dict:
+def parse(texto: str) -> Dict:
     """
     Parser robusto para faturas da Enel (SP, RJ, CE, GO), baseado em análise textual da fatura.
     """

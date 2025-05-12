@@ -1,13 +1,13 @@
 import re
 from typing import Dict
 
-from .parser_enel import parser_enel
+from .parser_enel import parse
 from .parser_neoenergia import parser_neoenergia
 from .parser_energisa import parse
 from .parser_equatorial import parser_equatorial
-from .parser_cpfl import parser_cpfl
+from .parser_cpfl import parse
 from .parser_edp import parser_edp
-from .parser_cemig import parse 
+from .parser_cemig import parse
 from .parser_celesc import parser_celesc
 from .parser_light import parser_light
 from .parser_cooperativas import parser_cooperativas

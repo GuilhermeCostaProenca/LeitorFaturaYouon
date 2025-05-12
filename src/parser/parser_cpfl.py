@@ -2,7 +2,7 @@ import re
 from typing import Dict
 
 
-def parser_cpfl(texto: str) -> Dict:
+def parse(texto: str) -> Dict:
     """
     Parser robusto para faturas do grupo CPFL: CPFL Paulista, CPFL Santa Cruz, RGE, Piratininga.
     """
