@@ -3,22 +3,74 @@
 <head>
   <meta charset="UTF-8">
   <title>Leitor de Fatura - You.on</title>
-  <link rel="stylesheet" href="/static/style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      color: #333;
+      padding: 2rem;
+      max-width: 700px;
+      margin: auto;
+    }
+    h2, h3 {
+      color: #008f68;
+    }
+    form {
+      background: white;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px #ccc;
+    }
+    input[type="file"] {
+      margin: 1rem 0;
+    }
+    button {
+      background: #008f68;
+      color: white;
+      border: none;
+      padding: 0.6rem 1.2rem;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    .resultado {
+      background: white;
+      margin-top: 2rem;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px #ccc;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    li {
+      margin-bottom: 0.5rem;
+    }
+    .erro {
+      color: red;
+    }
+  </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Leitor de Conta de Luz - You.on</h1>
-    <form action="/upload/" enctype="multipart/form-data" method="post">
-      <input type="file" name="file" required>
-      <button type="submit">Enviar e Ler Dados</button>
-    </form>
+  <h2>Envie uma conta de luz (PDF)</h2>
+  <form action="/upload" method="post" enctype="multipart/form-data">
+    <input type="file" name="fatura" accept="application/pdf" required>
+    <button type="submit">Enviar</button>
+  </form>
 
-    {% if data %}
-    <div class="result">
-      <h2>Resultado:</h2>
-      <pre>{{ data | tojson(indent=2) }}</pre>
+  {% if erro %}
+    <p class="erro">{{ erro }}</p>
+  {% endif %}
+
+  {% if dados %}
+    <div class="resultado">
+      <h3>Dados extraídos:</h3>
+      <ul>
+        {% for chave, valor in dados.items() %}
+          <li><strong>{{ chave.replace('_', ' ').title() }}:</strong> {{ valor }}</li>
+        {% endfor %}
+      </ul>
     </div>
-    {% endif %}
-  </div>
+  {% endif %}
 </body>
 </html>

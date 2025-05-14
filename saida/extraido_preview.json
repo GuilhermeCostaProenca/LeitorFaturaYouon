@@ -1,0 +1,21 @@
+{
+    "name": "",
+    "subelemento": "3009014166",
+    "distribuidora": "CEMIG",
+    "mercado_energia": "Livre",
+    "classe": "Industrial",
+    "subgrupo_tarifario": "A4",
+    "modalidade_tarifaria": "TUSD Livre A",
+    "tipo_energia": "I5",
+    "referencia": "JAN/2025",
+    "vencimento": "27/02/2025",
+    "valor_total": "66.663,51",
+    "media_consumo_p": 463.833,
+    "media_consumo_fp": 515.0,
+    "hist_demanda_p": 512,
+    "hist_demanda_fp": 578,
+    "demanda_contratada_p": 0.0,
+    "demanda_contratada_fp": 0.0,
+    "ultrapassagem_p": 512.0,
+    "ultrapassagem_fp": 578.0
+}
