@@ -1,3 +1,5 @@
-azure-ai-formrecognizer==3.3.0
-azure-core==1.29.1
-requests==2.31.0
+fastapi
+uvicorn
+PyMuPDF
+jinja2
+python-multipart

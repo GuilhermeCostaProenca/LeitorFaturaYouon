@@ -1,0 +1,10 @@
+{
+  "distribuidora_detectada": "ENERGISA MG",
+  "demanda_contratada_ponta_kW": "123131.80",
+  "mercado": "Cativo",
+  "classe": "Industrial",
+  "subgrupo_tarifario": "A4",
+  "modalidade_tarifaria": "Verde",
+  "tipo_energia": "Não identificado",
+  "precisa_revisao": true
+}

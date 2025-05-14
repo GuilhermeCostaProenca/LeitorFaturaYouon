@@ -1,0 +1,10 @@
+{
+  "classe": "Não identificado",
+  "subgrupo_tarifario": "Não identificado",
+  "modalidade_tarifaria": "Não identificado",
+  "tipo_energia": "Não identificado",
+  "consumo_ponta_kWh": null,
+  "consumo_fora_ponta_kWh": null,
+  "demanda_contratada_ponta_kW": null,
+  "demanda_contratada_fora_kW": null
+}
