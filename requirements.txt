@@ -1,25 +1,28 @@
 # --- Backend web ---
-fastapi==0.110.0          # Framework leve e rápido para APIs
-uvicorn[standard]==0.29.0 # Servidor ASGI para rodar o FastAPI
+fastapi==0.110.0
+uvicorn[standard]==0.29.0
 
 # --- Templates e arquivos estáticos ---
-jinja2==3.1.3             # Engine para templates HTML (interface)
-aiofiles==23.2.1          # Manipulação assíncrona de arquivos (upload)
+jinja2==3.1.3
+aiofiles==23.2.1
 
 # --- Azure AI ---
-azure-ai-formrecognizer==3.3.2  # Cliente oficial do Azure Form Recognizer
-azure-core==1.30.1              # Dependência base da Azure SDK
+azure-ai-formrecognizer==3.3.2
+azure-core==1.30.1
 
 # --- Manipulação de PDFs (caso use localmente) ---
-PyMuPDF==1.24.2          # Biblioteca para extrair texto de PDFs (opcional)
-pdfplumber==0.10.3       # Extração avançada de conteúdo de PDFs (backup/local)
+PyMuPDF==1.24.2
+pdfplumber==0.10.3
 
-# --- Regex, validação, utils ---
-python-multipart==0.0.9  # Necessário para upload de arquivos via formulário
-python-dotenv==1.0.1     # Para ler variáveis de ambiente (como chave Azure)
+# --- Uploads, variáveis de ambiente e formulário ---
+python-multipart==0.0.9
+python-dotenv==1.0.1
 
-# --- Logging / debug (opcional, mas útil) ---
-loguru==0.7.2            # Logger moderno e poderoso
+# --- Logging / debug (opcional) ---
+loguru==0.7.2
 
-# --- Parser e manipulação de texto (caso use NLP depois) ---
+# --- Regex avançado (opcional) ---
 regex==2023.12.25
+
+# --- Compatibilidade com VS Code e Pylance ---
+requests==2.31.0

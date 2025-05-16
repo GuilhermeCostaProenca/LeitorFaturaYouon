@@ -3,8 +3,9 @@ from fastapi import FastAPI, File, UploadFile, Request
 from fastapi.responses import HTMLResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
+
 from src.azure_reader import extrair_texto_azure
-from src.parser_dispatcher import parser_dispatcher
+from src.parser.enel.parser_enel_sp import parse_enel_sp
 from src.validador import validar_dados
 
 app = FastAPI()
@@ -12,9 +13,11 @@ app = FastAPI()
 app.mount("/static", StaticFiles(directory="static"), name="static")
 templates = Jinja2Templates(directory="templates")
 
+
 @app.get("/", response_class=HTMLResponse)
 async def index(request: Request):
     return templates.TemplateResponse("index.html", {"request": request})
+
 
 @app.post("/upload", response_class=HTMLResponse)
 async def upload(request: Request, fatura: UploadFile = File(...)):
@@ -28,23 +31,19 @@ async def upload(request: Request, fatura: UploadFile = File(...)):
     os.makedirs("temp", exist_ok=True)
 
     try:
-        # Salva o PDF
         with open(caminho, "wb") as buffer:
             buffer.write(await fatura.read())
 
-        # 🔍 Extrai texto com Azure
         print("\n🔎 EXTRAINDO TEXTO DO OCR...")
         texto_extraido = extrair_texto_azure(caminho)
         print("\n📄 TEXTO OCR BRUTO:")
         print("=" * 60)
-        print(texto_extraido[:3000])  # só os primeiros 3000 caracteres
+        print(texto_extraido[:3000])
         print("=" * 60)
 
-        # 🔍 Dispara o parser
-        print("\n🧠 INICIANDO PARSER...")
-        dados = parser_dispatcher(texto_extraido)
+        print("\n🧠 INICIANDO PARSER ENEL SP...")
+        dados = parse_enel_sp(texto_extraido)
 
-        # ✅ Valida os dados
         dados = validar_dados(dados)
 
         print("\n📊 DADOS EXTRAÍDOS:")
@@ -54,7 +53,7 @@ async def upload(request: Request, fatura: UploadFile = File(...)):
         return templates.TemplateResponse("index.html", {
             "request": request,
             "dados": dados,
-            "texto_ocr": texto_extraido[:3000]  # pode exibir o texto se quiser no HTML
+            "texto_ocr": texto_extraido[:3000]
         })
 
     except Exception as e:
@@ -65,5 +64,5 @@ async def upload(request: Request, fatura: UploadFile = File(...)):
         })
 
     finally:
-        # Limpa o arquivo temporário
-        os.remove(caminho)
+        if os.path.exists(caminho):
+            os.remove(caminho)

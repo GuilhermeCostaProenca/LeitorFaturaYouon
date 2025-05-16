@@ -1,0 +1,148 @@
+Eletropaulo Metropolitana Eletricidade de São Paulo S.A. Av. das Nações Unidas 14401 - Conjuntos 1 a 4 Andar 17º ao 23º Torre B1 - Vila Gertrudes São Paulo SP CEP:04794-000 CNPJ: 61.695.227/0001-93 - Inscrição Estadual 133.122.090.117
+enel
+Conta de Energia Elétrica
+Nota Fiscal
+CLASSIFICAÇÃO DA UNIDADE CONSUMIDORA
+TIPO DE FORNECIMENTO
+A - A4 - AZUL - Industrial - Industrial
+Trifásico
+SEGUNDA VIA.
+Nº 595506302176 Página 1/2
+DATAS DE LEITURA
+LEITURA ANTERIOR
+LEITURA ATUAL
+Nº DE DIAS
+PRÓXIMA LEITURA
+31/10/2024
+30/11/2024
+30
+31/12/2024
+KUKA PRODUTOS INFANTIS LTDA AV HENRY FORD 312 - PARQUE DA MOOCA CEP: 03109-000 - SAO PAULO/SP CNPJ: 51 .***.*** / ****- 14 INSC. EST: ISENTO
+INSTALAÇÃO / UNID. CONSUMIDORA MTE0006995
+INFORMAÇÕES FISCAIS
+Nº DO CLIENTE
+10012357
+MÊS/ANO
+VENCIMENTO
+TOTAL A PAGAR
+11/2024
+11/12/2024
+R$42.176,15
+Nota Fiscal de Conta de Energia Eletrica E59A.E9B2.7A25.F437.C21A.1529.D738.342A NOTA FISCAL Nº 000270524 - SÉRIE ACL DATA DE EMISSÃO: 03/12/2024
+CFOP: 5252 (Venda de en. elétrica p/ estabelecimento industria) CPF/CNPJ: 51 .***.*** / ****- 14 e INSC. EST. ISENTO
+MENSAGENS IMPORTANTES
+Bandeira(s) tarifária(s) aplicada(s) no mês: VERDE Confira aqui o DEC (número médio de horas que os clientes de seu conjunto ficaram sem energia) e o FEC (número de vezes que os mesmos clientes ficaram sem energia): DEC (Ano/Jul/Ago/Set):3.72/0.12/0.31/0.35 FEC (Ano/Jul/Ago/Set):1.48/0.03/0.07/0.06 CFOP: 5252 (Venda de en. elétrica p/ estabelecimento industria)
+- Unid. consumidora enquadrada na categoria A4 Azul - Consumidor Especial, faturada com desc. tarifário de R$ 13787.84 ICMS-subvenção por determinação da Sefaz-SP nos termos do Decreto nº 64.255/2019        
+- O pagamento desta conta não quita débitos anteriores. ENCARGO CONTA ESCASSEZ HIDRICA - conforme art. 8 da resolução Normativa ANEEL nº 1008, de 15 de março de 2022. ENCARGO DA CONTA COVID - conforme art. 10 da Resolução Normativa ANEEL nº 885, de 23 de junho de 2020.
+DADOS DE MEDIÇÃO
+Medidor
+Grandezas
+Postos Tarifários
+Leitura Anterior
+Leitura Atual
+Const Medidor
+Consumo kWh/kW
+13150910
+ENRG ATV
+PONTA
+1.096.146
+1.159.237
+0,21000
+13.249,110
+13150910
+ENRG ATV
+F PONTA
+2.544.158
+2.697.882
+0,21000
+32.282,040
+13150910
+ENRG ATV
+F PONTA INDU
+8.537.664
+9.070.646
+0,21000
+111.926,220
+13150910
+DEMANDA
+PONTA
+439
+372
+0,84000
+312,480
+13150910
+DEMANDA
+F PONTA CAP
+435
+383
+0,84000
+321,720
+13150910
+DEMANDA
+F PONTA INDU
+632
+579
+0,84000
+486,360
+13150910
+ENRG RTV
+PONTA
+499.886
+527.750
+0,21000
+5.851,440
+13150910
+ENRG RTV
+F PONTA INDU
+3.244.032
+3.430.288
+0,21000
+39.113,760
+13150910
+ENRG RTV UFER
+PONTA
+19.219
+19.797
+0,21000
+121,380
+13150910
+ENRG RTV UFER
+F PONTA INDU
+37.025
+37.615
+0,21000
+123,900
+13150910
+DEM RTV DMCR
+PONTA
+1.761
+1.409
+0,21000
+295,890
+13150910
+DEM RTV DMCR
+F PONTA CAP
+1.577
+1.378
+0,21000
+289,380
+13150910
+DEM RTV DMCR
+F PONTA INDU
+2.397
+2.228
+0,21000
+467,880
+13150910
+ENRG RTV
+F PONTA CAP
+5
+11
+0,21000
+1,260
+DESCRIÇÃO DO FATURAMENTO
+Itens de Fatura
+Unid.
+Quant. (kW/ Preço unit (R$)
+kWh/KVArh) com tributos
+Valor

@@ -1,0 +1,184 @@
+enel
+Eletropaulo Metropolitana Eletricidade de São Paulo S.A Av. das Nações Unidas 14401 - Conjs 1 a 4 andar 17º ao 23º Torre B1 Vila Gertrudes São Paulo SP CEP: 04794-000 CNPJ: 61.695.227/0001-93 Inscrição Estadual 133.122.090.117 Regime Especial Proc. N. 1000635-686924/2005
+Nº 641105501628
+Páginas 2/2
+Dados do Cliente/Unidade Consumidora
+Nº DA INSTALAÇÃO MTE0010064 Nº DO CLIENTE 10002701
+CNPJ: 58.103.755/0001-00
+INSCRIÇÃO ESTADUAL: ISENTO
+@ Dados da Conta
+VENCIMENTO
+TOTALA PAGAR (RS)
+29 MAI 2023
+52.619,17
+ASSOC DOS COMERC DO MERCADO DE PINHEIROS R PEDRO CRISTE 89 PINHEIROS 05421-040 SAO PAULO/SP
+CONTA REFERENTE A MAI 2023
+Dados de Medição
+Nº do medidor
+13233352
+Leitura anterior 01 ABR
+Leitura atual
+01 MAI
+Próxima leitura 01 JUN
+B00 Histórico de Faturamento
+8 Classificação da Unidade Consumidora
+Grupo A
+Subgrupo A4
+Classe COMÉRCIO, SERV.E OUTRAS ATIV.
+Dias
+30
+Mês/Ano
+Demande (kw)
+Consumo (kWh)
+Hora Ponta Hora Fora Ponta
+Hora Ponta
+Hora Fora Ponta
+MAI/23
+180,0
+208,9
+5.617,2
+70.660,7
+ABR/23
+180,0
+209,7
+7.692,0
+79.366,8
+MAR/23
+180,0
+206.1
+6.319,5
+68.402,1
+FEV/23
+180,0
+198,8
+6.601,9
+71.150,4
+JAN/23
+180,0
+211,7
+7.047,5
+76.598,9
+DEZ/22
+180,0
+195,3
+5.881,8
+69.000,6
+NOV/22
+180,0
+204.4
+6.051,1
+71.848,9
+OUT/22
+180,0
+180.0
+5.883,3
+63.969,4
+SET/22
+180,0
+180.0
+6.329,9
+66.232,0
+AGO/22
+180,0
+180,0
+6.500,3
+70.874,7
+JUL/22
+180.0
+180,0
+5.766,3
+61.421,7
+JUN/22
+180,0
+197,8
+6.450,3
+69.146,7
+MAI/22
+180,0
+217,5
+6.407,6
+75.919,2
+31
+28
+Subclasse OUTROS SERVIÇOS E OUTRAS ATIVIDADES
+31 31
+Tipo de Famecimento Trifásico Modalidade Tarifária Azul
+30 31
+Demanda / Energia Contratada H.Ponta 180,0
+30
+31
+31
+30
+Reservado ao Fisco
+D2E0.9AA8.6B07.BFD8.F139.D194.4D21.1096
+Data de emissão Nº Nota fiscal
+Série
+Base de cálculo
+Aliquota
+ICMS
+12 MAI 2023
+000820115
+A
+50.138,09
+18%
+9.024,81
+31 30
+CFOP 5253 Venda de en. elétrica p/ estabelecimento comercial
+~/ Descrição de Faturamento
+P Bandeira(s) Tarifária(s) aplicada(s) no mês
+VERDE
+0601
+UFER FORA PONTA TE
+3.403,6
+0,31764
+1.081,11
+18%
+194,60
+1.081,11
+0602
+DEMANDA LEI ESTADUAL 16.886/18
+39,1
+31,00000
+0,00
+0%
+0,00
+1.213,09
+0699
+PIS/PASEP (1,08%)
+541,38
+18%
+97,44
+541,38
+0699
+PIS/PASEP (1,08%)
+0,00
+0%
+0,00
+13,94
+0699
+COFINS (4,96%)
+2.486,78
+18%
+447,62
+2.486,78
+0699
+COFINS (4,96%)
+0,00
+0%
+0,00
+64,03
+0807
+COSIP - SÃO PAULO - MUNICIPAL
+1.190,02
+0,26046 31,00000
+Valor dos tributos: R$ 11.585,93
+MENSAGENS: - CFOP: 5253 (Venda de en. elétrica p/ estabelecimento comercial) - O pagamento desta conta não quita débitos anteriores. - Ultrapassagem de demanda fora ponta registrada em 05/04/2023 às 13:30. Dado coletado após fechamento da fatura anterior.
+enel
+21baa0aa63ac4ac0a77841b43a8c4c90002
+)
+39968400010902
+BANCO ITAÚ
+341-7
+34191.09040 57658.502935 80145.740009 6 93650005261917
+Local de Pagamento Pagável, até o vencimento, em qualquer agência bancária da rede autorizada
+Cedente Eletropaulo Metropolitana Eletricidade de São Paulo S.A. - CNPJ n 81.695.227/0001-93 - Av. das Nações Unidas, 14401 Conjuntos 1 a 4, andar 17" ao 23°, - Torre B1 - Vila Gertru
